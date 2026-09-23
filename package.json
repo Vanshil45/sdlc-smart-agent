@@ -1,0 +1,17 @@
+{
+  "name": "todo-app-with-auth",
+  "version": "1.0.0",
+  "description": "A simple Todo application with user authentication using Express and React.",
+  "scripts": {
+    "start": "node server/server.js",
+    "client": "npm start --prefix client",
+    "server": "nodemon server/server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "dependencies": {
+    "concurrently": "^6.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
